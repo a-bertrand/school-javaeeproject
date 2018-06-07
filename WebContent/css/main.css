@@ -1,0 +1,162 @@
+/*
+    Global Css
+*/
+/* Layout  */
+.table-hover > tbody > tr:hover 
+{
+    background-color: rgba(150,150,200,0.9) !important;
+}
+body
+{
+    background-image: url("image/Background.png");
+    color : white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nav_bar
+{
+    background-color: rgba(140,140,140,0.6) !important;
+    border-color: #e7e7e7;
+    border: 1px solid;
+    font-size: large;
+    text-align: center;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
+.navbar-default
+{
+    
+}
+footer
+{
+    margin-top: 50px;
+}
+/* -------------------------------------------------------- */
+#sidebar
+{
+    width : 100%; 
+    height: 100px; 
+    background-color: rgba(0,0,0,0.5); 
+    color: white;
+}
+.main_content
+{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgba(240,240,240,0.6) !important;
+    padding: 1%;
+}
+.quantity_select
+{
+    background-color: white;
+    color: black;
+    width: 30px;
+}
+layout_nav_registerbox
+{
+    float   :right;
+    width   :20%;
+}
+/* GENERIC FORM */
+
+#bs-example-navbar-collapse-8
+{
+    float   :left;
+    width   : 80%;
+}
+
+.generic_form
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.generic_form label
+{
+    width: 150px;
+}
+.generic_form input
+{
+    color: black;
+}
+.generic_form input[type=number]
+{
+    color: black;
+    width:50px;
+}
+.generic_form button
+{
+    color: black;
+}
+.generic_form select
+{
+    width: 160px;
+    color:black;
+}
+.actions
+{
+    
+}
+/* fixe bootstrap */
+.container
+{
+   padding : 0px !important;
+}
+footer hr{margin : 0px !important;}
+
+.item-tosell
+{
+    text-align: center;
+    height: 300px;
+}
+.item-tosell img
+{
+    width: 100%;
+    z-index: 1;
+    
+}
+.nav > li > a
+{
+	color : black;
+}
+.arrow span
+{
+	font-size:35px;
+}
+.arrow_text-R
+{
+	font-size: 20px !important;
+	position: relative;
+	top: -8px;
+	right: 10px;
+}
+.arrow_text-L
+{
+	font-size: 20px !important;
+	position: relative;
+	top: -8px;
+	left: 10px;
+}
+/* -------------------------------------------------------- */
+/* -------------------- BACK OFFICE ----------------*/
+#backoffice_navbar
+{
+    position : fixed;
+    width : 100%;
+    top : 0;
+    font-size : large;
+    background-color: rgba(250,250,250,0.8);
+}
+.generic_form img 
+{
+    margin-left: auto;
+    margin-right:auto;
+}
+#preview_div 
+{
+    text-align: center;
+}

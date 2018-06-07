@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Titre de l'application -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<context-param>
+		<param-name>title</param-name>
+		<param-value>Gestion des notes</param-value>
+	</context-param>
+	<context-param>
+		<param-name>template</param-name>
+		<param-value>/WEB-INF/JSP/Commun/template.jsp</param-value>
+	</context-param>
+	<context-param>
+        <param-name>css</param-name>
+        <param-value>/ressources/css/main.css</param-value>
+    </context-param>
+    
+	<servlet>
+		<servlet-name>mainservlet</servlet-name>
+		<servlet-class>controleur.mainservlet</servlet-class>
+		<init-param>
+			<param-name>urlindex</param-name>
+			<param-value>/WEB-INF/JSP/Pages/index.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urldetails</param-name>
+			<param-value>/WEB-INF/JSP/Pages/details.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urlgroupes</param-name>
+			<param-value>/WEB-INF/JSP/Pages/groupes.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urletudiantByGroupe</param-name>
+			<param-value>/WEB-INF/JSP/Pages/etudiantByGroupe.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urlnoteByEtudiant</param-name>
+			<param-value>/WEB-INF/JSP/Pages/noteByEtudiant.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urladdetu</param-name>
+			<param-value>/WEB-INF/JSP/Pages/addetu.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urlnotebygroupe</param-name>
+			<param-value>/WEB-INF/JSP/Pages/notebygroupe.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urlabscencebygroupe</param-name>
+			<param-value>/WEB-INF/JSP/Pages/abscenceByGroupe.jsp</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>urledutEtudiant</param-name>
+			<param-value>/WEB-INF/JSP/Pages/editEtudiant.jsp</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainservlet</servlet-name>
+		<url-pattern>/main/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	    <servlet-name>mainservlet</servlet-name>
+	    <url-pattern>/ressources/css/*</url-pattern>
+	</servlet-mapping>
+ 
+
+		<welcome-file-list>
+		<welcome-file>/JSP/Pages/index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
